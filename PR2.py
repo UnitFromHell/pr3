@@ -7,7 +7,7 @@ for j in range(4):
         else:
             sum = sum + (i % 10) + (i // 10)
 #672
-print(sum)
+
 for j in range(7):    
     for i in range(32):
         if(i < 10):
@@ -15,16 +15,16 @@ for j in range(7):
         else:
             sum = sum + (i % 10) + (i // 10)
 #1204
-print(sum)
+
 for i in range (29):
     if(i < 10):
         sum = sum + i
     else:
         sum = sum + (i % 10) + (i // 10)
 #154
-v = int(input("1 - Високосный \n 2 - Невисокосный \n"))
-if(v == 1):
+v = int(input("год \n"))
+if(v % 4 == 0):
     sum = sum + 11 
-    print(sum)
-if(v == 2):
-    print (sum)
+    print("Високосный" + " " + str(sum) + " " +"Дней")
+else:
+    print ("Невисокосный" + " " + str(sum) + " " "Дней")
